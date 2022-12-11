@@ -3,8 +3,8 @@ from questions import question_data
 from quiz_main import QuizMain
 question_bk=[]
 for question in question_data:
-    qn=question['text']
-    an=question['answer']
+    qn=question["question"]
+    an=question["correct_answer"]
     new_q=Question(qn,an)
     question_bk.append(new_q)
 
